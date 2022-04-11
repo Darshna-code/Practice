@@ -1,0 +1,48 @@
+
+p{
+    background-color: yellow;
+    padding: 30px;
+    display: none;
+}
+
+div.x:hover p{
+   display: block; 
+}
+
+
+<!p:first-child{
+    background-color: aqua;
+}>
+
+<!p:nth-child(3){
+    background-color: blueviolet;
+}>
+
+
+ul {
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+}
+
+li a{
+  display: block;
+    width: 100px;
+    margin: 5px;
+    text-decoration: none;
+    border: 2px solid red;
+    text-align: center;
+    background-color: yellow;
+}
+
+li a:hover:not(.active){
+    background-color:aqua;
+    opacity: 0.3;
+}
+
+.active{
+    background-color: coral;
+    color: black;
+}
+
+

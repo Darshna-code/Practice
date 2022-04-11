@@ -1,0 +1,70 @@
+p
+{
+    color:blue;
+     background-color: aquamarine;
+    text-decoration:underline;
+    text-align: center;
+    text-transform: uppercase;<!capitalize>
+    line-height: 100px;
+ 
+}
+
+h1
+{
+    background-color: antiquewhite;
+    text-decoration: overline;
+       text-indent: 30%;
+    letter-spacing: 15px;
+}
+{
+        color: aquamarine;
+        background-color: aliceblue;
+}
+#first {
+    background-color: darkgrey;
+
+}
+
+
+#hii {
+    font-weight:bold;
+}
+
+
+
+
+div {
+    border: 2px solid green;
+    text-align: center;<!or margine=auto for anything in center>
+    <!set size of block by width example width:30%>
+<! text are block but imgs are inline so set the image to block by>
+    <!display=block and margin=auto>
+        
+}
+
+#one {
+    padding: 120px;
+    border: 2px solid red;
+}
+
+#two {
+    height: 300px;
+    border: 5px solid blue;
+    line-height: 300px;<!line-height and height: should same>
+    text-align: center;
+}
+
+#para {
+ display: inline-block;
+    vertical-align: middle;
+    line-height: 1.7;
+}
+
+#three {
+        height: 300px;
+    border: 5px solid blue;
+    line-height: 300px;<!line-height and height should same>
+    text-align: center;
+}
+
+

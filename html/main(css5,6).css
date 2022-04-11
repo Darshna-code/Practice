@@ -1,0 +1,63 @@
+
+div {
+   float: left;
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    margin: 10px;
+    display: inline-block;
+    <!or clear: both in paragraph>;
+    <!border-radius:25px 0px 30px 10px;>
+    <!transform:translate(50px,50px);>
+    <!transform: rotate(-80deg);>
+    <!transform:skewx(20deg);>
+    <!transform:skewy(20deg);>
+    <!transform: rotateX(50deg)>
+    <!transform: rotatey(50deg)>
+    <!transform: rotatez(50deg)>
+    <!transform: rotate3d(50deg 10deg 10deg)>
+    <!background:linear-gradient(to left,yellow,red,black,green,blue);>
+    <!background:radial-gradient(to left,yellow,red,black,green,blue);>
+}
+
+
+
+#prem {
+width: 50%;
+    position: relative;
+    height: 300px;
+    border: 3px solid blue;
+    
+    
+}
+
+#kuku {
+     top: 1px;
+ position: absolute;
+    width:100px;
+    height:100px;
+    border: 2px solid red;
+    margin:50px;
+    left: 50px;   
+}
+
+body {
+    <!padding: 0;>
+    <!margin: 0;>
+}
+
+#sonu {
+    height: 250px;
+    width: 50%;
+    position: relative;
+    border: 2px solid orange;
+}
+
+#move {
+    position: absolute;
+    margin: 0;
+    top:50%;
+    left: 40%;
+    transform: translate(-50,-50);
+    
+}

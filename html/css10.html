@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+   <title>horizontal navbar</title>
+    
+<style>
+    body{
+        margin: 0;
+        padding:0;
+    }
+    
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+         background-color: black;
+        overflow: hidden;
+       height:80px;
+     
+    }
+    
+    li{
+        float: left;<!for horizontal navbar>
+        border-right:2px solid red;
+        width: 220px;
+    }
+    
+    li a,.button {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+         height: 80px;
+    
+      
+    }
+    
+    
+    .container{
+        display: inline-block;
+        
+    }
+    
+    .content{
+        display: none;
+        position: absolute;
+        background-color: fuchsia;
+        z-index:1;
+        padding: 100px;
+        overflow: visible;
+        width: 210px;
+        height: 350px;
+
+       
+   
+    }
+    
+    .content a{
+        color: black;
+        text-decoration: none;
+        display: block;
+        height: 50px;
+        text-align: center;
+
+        
+    }
+    
+    .container:hover .content{
+        display: block;
+        padding: 5px;
+        left: 13px;
+        top: 80px;
+    }
+    
+    li a:hover:not(.active)
+    {
+        background-color: red;
+        color: black;
+    }
+    
+    .active{
+        background-color: greenyellow;
+        color: darkblue;
+    }
+    
+    div{
+        height: 50%;
+        width: 50%;
+        padding: 5%;
+         margin-left: 15%;
+        margin-right:15%;
+        font-size:20px;
+        background-color: aquamarine;
+        overflow:auto;
+        box-shadow: 20px 20px 10px yellow;
+        <!(1)-horizonatal   (2)-vertical   (3)-blur-effect   (4)-color>
+        
+    }
+    
+    li:first-child{
+        border:none;
+    }
+    
+    p{
+        text-shadow: 10px 10px 2px red;
+    }
+</style>
+</head>
+
+<body>
+ <ul>
+    <li style="float: right"><a class="active" href="#"><h2>Home</h2></a></li>
+    <li><a href="#"><h2>Home</h2></a></li>
+     
+  <li  class="container"><a href="#" class="button"><h2>Home</h2></a>
+                <div class="content">
+                    <a href="#">link1</a>
+                    <a href="#">link2</a>
+                    <a href="#">link3</a>
+                    <a href="#">link4</a>
+                    <a href="#">link5</a>
+                </div>
+     </li>
+     
+    <li><a href="#"><h2>Home</h2></a></li>
+</ul> 
+
+<div>I am darshna.persuing engineering B.E in hkbkce college of engineering, kuku,prem,motu,damini,shailja,kanishka,prem,devansh,darshik,heet,trusha,jaimini,jammu
+pammmu,cur=tu,shivay,om namah shivay,om namah shivavy,om namah shivay, om namah shivay, om namah shivay, om namah shivay, om namah shivay, om namah shivay, om namah shivay, om namah shivay,om namah shivavy,om namah shivay, om namah shivay, om namah shivay, om namah shivay, om namah shivay
+chidiya,bhensa,anchal,darshik,devansh,gajendra,kamala,krishna,om namah shivay,om namah shivay,om namah shivay,om namah shivay,om namah shivay,om namah shivay,om namah shivay,om namah shivay,om namah shivay,om namah shivay,om namah shivavy,om namah shivay, om namah shivay, om namah shivay, om namah shivay
+</div>
+    
+<h2><p>for just shadow purpose</p></h2>
+</body>
+</html>

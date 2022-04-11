@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>styling form,transition</title>
+    <style>
+        div{
+            background-color:darkgray;
+            padding: 20px;
+        }
+        
+        input[type=text]{
+           width: 100%;
+            background-color: azure;
+        }
+        
+        input[type=submit]{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color:black;
+            color: aliceblue;
+        }
+        
+        input[type=submit]:hover{
+          background-color: cornflowerblue;
+            color: black;
+        opacity: 0.7;
+        }
+        
+        .transition{
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            transition: width 3s,height 5s,transform 2s;
+            <!transition: width;><!or width 3s>
+            <!transition-duration: 3s;>
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+            box-shadow: 20px 20px 10px red;
+            overflow: hidden;
+          
+        } 
+        
+        .transition:hover{
+            width: 400px;
+            height: 400px;
+            transform: rotate(350deg);
+        }
+        
+        p{
+            overflow: hidden;
+        }
+        
+        
+        .animation{
+            height: 100px;
+            width: 100px;
+             background-color: chartreuse;
+            animation-name: hello;
+            animation-duration: 5s;
+           margin-left: 200px;
+            margin-top: -140px;
+            animation-delay: 1sec;
+            animation-iteration-count: infinite;<!or 1,2,3,4..>
+           }
+        
+        @keyframes hello{
+            <!from{background-color: chartreuse;}  
+            to{background-color: black;}>
+            0%{background-color: chartreuse;}
+            20%{background-color: red;}
+            40%{background-color: blue;}
+            60%{background-color: yellow;}
+            80%{background-color: deeppink;}
+            100%{background-color:darkmagenta;}
+        }
+    
+        
+        #image{
+            border-radius: 50%;
+              margin-left: 400px;
+            margin-top: -140px;
+            padding: 15px;
+            background-color: chartreuse;
+            filter: blur(2px);
+            filter: grayscale(100%);
+        }
+        
+        
+        .one{
+          background-color: burlywood;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border:2px solid black;
+            box-shadow:10px 10px 8px green;
+        }
+        
+         .two{
+          background-color: yellow;
+            font-size: 24px;
+            padding: 12px;
+            border-radius: 30px;
+            border:2px solid black;
+            box-shadow:10px 10px 5px red;
+        }
+        
+         .three{
+          background-color: red;
+            font-size: 28px;
+            padding: 14px;
+            border-radius: 50%;
+            border:2px solid black;
+            box-shadow:10px 10px 4px blue;
+        }
+        
+        button:hover{
+            background-color:darkgray;
+            opacity: 0.5;
+            transition: 2s;
+        }
+        
+        #boring{
+            cursor: not-allowed;
+        }
+        
+        button{
+            width: 100px;
+            <!display:block;>
+        }
+    </style>
+</head>
+
+<body>
+<div>
+<form>
+<label for="name">name:</label>
+<input  type="text" name="name" id="name" placeholder="type name here...">
+
+<label for="lastname">lastname:</label>
+<input  type="text" name="lastname" id="lastname" placeholder="type lastname here...">  
+    
+<input type="submit" value="submit please">  
+        
+    
+</form>  
+</div>
+    
+    
+<div class="transition"><p>CLICK ME!   India (Hindi: Bhārat), officially the Republic of India (Hindi: Bhārat Gaṇarājya),[23] is a country in South Asia. It is the second-most populous country, the seventh-largest country by land area, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west;[f] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand and Indonesia.
+
+Modern humans arrived on the Indian subcontinent from Africa no later than 55,000 years ago.[24] Their long occupation, initially in varying forms of isolation as hunter-gatherers, has made the region highly diverse, second only to Africa in human genetic diversity.[25]</p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/125px-Flag_of_India.svg.png" height="100px" width="100px"> </div>
+    
+    <div class="animation"></div>
+    
+    <img src="images.jpg" id="image">
+    
+    
+<button id="boring">button</button>
+<button class="one">css</button>
+<button class="two">html</button>
+<button class="three">css</button>
+</body>
+</html>
+<!00:38:56>

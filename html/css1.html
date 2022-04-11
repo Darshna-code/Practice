@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>css-cascading style sheet</title>
+<style>
+body{
+font-size:40px;
+text-align:center;
+}
+
+h1{
+text-align:left;
+background-color: yellow;
+font-size: 40px;
+color: green;
+border:2px solid red;
+margin-bottom:0;
+margin-left:100px;
+}
+    
+h2{
+background-color: red;
+border-style:solid;
+border-bottom-width:10px;
+margin-top:0;
+margin-right:100px;
+}
+    
+*{
+background-color: black;
+}
+    
+a,p {
+background-color: white;
+}
+    
+p{
+color:red;
+padding:20px(top) 0px(left) 10px(bottom) 30px(right);
+padding: 20px(for all);
+padding-bottom:50px;
+border-style: dashed;
+}
+    
+span{
+background-color: #00acee;
+}
+    
+ p.center{
+      color:forestgreen;  
+}
+
+div{
+    border: 5px solid orange;
+    }
+
+div>p{   
+      background-color: chartreuse; <!output (para 1,2) >     
+    }
+<!div p = output (para 1,2,3)>
+<!div + p = output (para 4)>
+<!div ~ p = output (para 4,5)>
+
+.abc{
+      background-color: azure;  
+    }
+
+</style>
+</head>
+<body>
+<h1>Hello World</h1>
+<a href="https://www.google.com" target="_blank"><h2>Google</h2></a>
+<h1><a href="https://www.google.com" target="_blank">Google</a>
+------------------>>>hello google
+</h1>
+<p>i am learning <span>css</span> from this tutorial</p>
+<p>i am learning <span>html</span> from this tutorial</p>
+    
+<h1>selectors</h1>
+<h1 class="center">This heading will not be affected</h1>
+<p class="center">This paragraph will be red and center-aligned.</p>
+ 
+<div>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <span><p>paragraph 3</p></span>
+</div>
+<p>paragraph 4</p>
+    <h3 class="abc">paragraph-------------</h3>
+<p>paragraph 5</p>
+</body>
+</html>
